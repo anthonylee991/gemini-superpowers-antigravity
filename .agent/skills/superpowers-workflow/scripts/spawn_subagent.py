@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Spawn an isolated Gemini CLI subagent for focused task execution.
 
-This enables parallel execution by launching independent gemini-cli instances
+This enables parallel execution by launching independent gemini instances
 with isolated context and specific skill instructions.
 """
 
@@ -101,7 +101,7 @@ When complete, output:
 """
 
     # Build command
-    cmd = ["gemini-cli"]
+    cmd = ["gemini"]
     if yolo:
         cmd.append("--yolo")
 
