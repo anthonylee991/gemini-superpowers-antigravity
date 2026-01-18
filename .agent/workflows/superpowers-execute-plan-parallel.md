@@ -176,7 +176,7 @@ After all batches complete:
 ## Troubleshooting
 
 ### Subagent spawn fails
-- Check that `gemini-cli` is in PATH
+- Check that `gemini` is in PATH (verify with: `gemini --version`)
 - Verify skill exists: `.agent/skills/superpowers-{skill}/SKILL.md`
 - Check subagent logs in `artifacts/superpowers/subagents/`
 

@@ -105,6 +105,7 @@ artifacts/
 
 - Python 3.10+
 - Antigravity installed
+- **For parallel execution:** Gemini CLI (`npm install -g @google/gemini-cli`, then verify with `gemini --version`)
 
 ### Install dependencies
 
@@ -208,7 +209,7 @@ Parallel execution spawns isolated subagents to execute independent plan steps s
 
 1. The workflow analyzes your plan for dependencies
 2. Groups steps into batches (Batch 1: independent steps, Batch 2: depends on Batch 1, etc.)
-3. Spawns isolated `gemini-cli` subagents for each step in a batch
+3. Spawns isolated `gemini` subagents for each step in a batch
 4. Each subagent has focused context (only sees its step + skill instructions)
 5. Results are consolidated and verified after each batch
 
