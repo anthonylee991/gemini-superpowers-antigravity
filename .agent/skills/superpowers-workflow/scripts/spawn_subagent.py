@@ -127,6 +127,7 @@ When complete, output:
                 text=True,
                 cwd=repo_root,
                 timeout=600,  # 10 minute timeout
+                shell=True,  # Required on Windows for .ps1/.cmd scripts
             )
 
             duration_s = time.time() - start_time
